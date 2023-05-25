@@ -48,14 +48,14 @@ const HeroSection = ({ styles }) => {
                         />
                         {pokemons.length === 0 && <Spinner animation="grow" variant="warning" className='d-block mt-3 mx-auto' />}
                     </div>
-                    <Row lg={5} md={2} sm={1} className='g-5 mt-4 pb-5'>
+                    <Row lg={5} md={2} sm={1} className='g-4 mt-4 pb-5'>
                         {/* mobile view  */}
                         <div className="d-block d-md-none">
                             <Swiper slidesPerView={2} spaceBetween={30} slidesPerGroup={1} loopFillGroupWithBlank={true} navigation={true} className="mySwiper">
                                 {
                                     pokemons.map((ele, i) => <SwiperSlide className='mb-16' key={i}>
                                         <Link href={`/pokemon/${ele.name}`}>
-                                            <div className={`${styles.pokemon_card} pb-5`}>
+                                            <div className={`${styles.pokemon_card}`}>
                                                 <div className={styles.image_container}>
                                                     <div className='tag'>#010</div>
                                                     <Image
