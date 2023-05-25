@@ -1,0 +1,92 @@
+.hero_section {
+  background-image: url("../public/assets/images/Background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.hero_bg {
+  background-image: url("../public/assets/images/Texture.png");
+  width: 100%;
+  height: 100%;
+}
+
+.pokemon_card {
+  clip-path: polygon(0% 0%, 100% 0, 100% 83%, 76% 100%, 0% 100%);
+  background-color: #fff;
+  border-radius: 5% 5% 0 5%;
+  padding: 12px;
+  transition: all 1s;
+}
+
+.pokemon_card p {
+  transition: 0.5s;
+}
+
+.pokemon_card:hover p {
+  color: white
+}
+
+.pokemon_card:hover {
+  background-color: rgb(136, 136, 229);
+}
+
+.image_container img {
+  margin: 0 auto;
+  transition: 0.5s;
+}
+
+.pokemon_card:hover img {
+  transform: scale(1.2);
+}
+
+.image_container {
+  background-color: #f7f3f3;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog_title {
+  font-weight: 600;
+  font-size: 40px;
+  color: rgb(115 115 215);
+  margin-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.blog_title::after {
+  content: "";
+  background-image: url("../public/assets/images/Brush.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 300px);
+  width: 525px;
+  height: 100%;
+  z-index: -1;
+}
+
+/* .blog_sec1 {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+} */
+
+.neature {
+  text-align: center;
+  margin-right: 10px;
+  padding: 3px 10px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
